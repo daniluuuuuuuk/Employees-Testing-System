@@ -45,7 +45,7 @@ class Account(AbstractBaseUser):
     is_superuser = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['username']
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'patronage']
 
     objects = MyAccountManager()
 
