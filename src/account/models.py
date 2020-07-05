@@ -23,9 +23,12 @@ class MyAccountManager(BaseUserManager):
         return user
 
     def create_superuser(self, username, first_name, last_name, patronage, password=None):
-        user = self.model(
+        user = self.create_user(
             username=username,
-            password=password
+            password=password,
+            first_name=first_name,
+            last_name=last_name,
+            patronage=patronage
         )
         user.is_admin = True
         user.is_staff = True
