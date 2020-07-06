@@ -39,3 +39,21 @@ background-color:#343a40!important
 	text-align: justify;
 	word-spacing: 3px;
 }
+.testinfo {
+	background-color: #F97300;
+	width: 700px;
+	height: 300px;
+	margin-top: 300px;
+	margin-left: 580px;
+	padding: 30px;
+}
+
+.testinfo_h{
+	text-align: center;
+	color: white;
+
+}
+
+li{
+	color: white;
+}
