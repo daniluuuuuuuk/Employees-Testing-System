@@ -57,3 +57,38 @@ background-color:#343a40!important
 li{
 	color: white;
 }
+.authorization{
+	background-color: #F97300;
+	width: 400px;
+	height: 400px;
+	margin-top: 300px;
+	margin-left: 740px;
+	padding: 30px;
+}
+.auth_h{
+	color: white;
+	text-align: center;
+}
+form{
+padding-left: 40px;
+}
+
+button{
+
+  padding-top: 50px;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding-left: 40px;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  margin-left: 30px;
+
+}
+button:hover { background: rgba(255,255,255,.2); }
+button:active { background: white; }

@@ -4,10 +4,10 @@
 {% block page_name %}XXX{% endblock %}
 
 {% block content %}
-   <h2>Войти</h2>
-  {% if form.errors %}
-    <p style="color: red">Неправильный логин или пароль.Пожалуйста, попробуйте еще раз.</p>
-  {% endif %}
+<div class="authorization">
+    <h2 class="auth_h">Войти</h2>
+    <br>
+
   <form method="post">
     {% csrf_token %}
     <input type="hidden" name="next" value="{{ next }}" />
@@ -23,6 +23,11 @@
         {% endif %}
       </p>
     {% endfor %}
+    {% if form.errors %}
+    <p style="color: red">Неправильный логин или пароль.</p>
+    {% endif %}
     <button type="submit">Войти</button>
+
   </form>
+</div>
 {% endblock %}
