@@ -70,7 +70,7 @@ li{
 	text-align: center;
 }
 form{
-padding-left: 40px;
+padding-left: 65px;
 }
 
 button{
@@ -87,7 +87,8 @@ button{
   border: 2px solid;
   border-radius: 1px;
   transition: 0.2s;
-  margin-left: 30px;
+  margin-left: 40px;
+  margin-top: 20px;
 
 }
 button:hover { background: rgba(255,255,255,.2); }
@@ -95,8 +96,19 @@ button:active { background: white; }
 
 .logged_out{
     background-color: #F97300;
-	width: 700px;
+	width: 500px;
 	height: 170px;
 	margin-top: 300px;
-	margin-left: 580px;
+	margin-left: 650px;
 }
+.log_out_text{
+    background-color: #F97300;
+	width: 500px;
+	height: 170px;
+    color: white;
+    padding: 55px;
+    font-size: 20px;
+    text-align: justify;
+	word-spacing: 3px;
+}
+
