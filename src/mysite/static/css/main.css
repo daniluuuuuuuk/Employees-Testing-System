@@ -92,3 +92,11 @@ button{
 }
 button:hover { background: rgba(255,255,255,.2); }
 button:active { background: white; }
+
+.logged_out{
+    background-color: #F97300;
+	width: 700px;
+	height: 170px;
+	margin-top: 300px;
+	margin-left: 580px;
+}
