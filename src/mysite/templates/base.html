@@ -25,14 +25,18 @@
          <a class="nav-link" href="/">Главная</a>
        </li>
          {% if user.is_authenticated %}
-       <li class="nav-item">
-         <a class="nav-link " href="#">{{user.username}}</a>
-       </li>
+         <li class="nav-item">
+            <a class="nav-link " href="{% url 'tests' %}">Тесты</a>
+         </li>
             {% if request.user.is_staff %}
             <li class="nav-item">
                 <a class="nav-link " href="/admin/">Управление сайтом</a>
             </li>
             {% endif %}
+       <li class="nav-item">
+         <a class="nav-link " href="#">{{user.username}}</a>
+       </li>
+
          {% endif %}
        <li class="nav-item">
            {% if user.is_authenticated %}
