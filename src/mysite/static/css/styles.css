@@ -19,5 +19,13 @@ button{
     font-size:18px;
 }
 #ot {
-    color:blue;
+    color: #F97300;
+}
+.card{
+margin-top: 100px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #F97300;
+    border-color: #F97300;
 }

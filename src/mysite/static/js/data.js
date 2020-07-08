@@ -1,4 +1,4 @@
-var test = "Умножение";
+var test = "Безопасность на производстве";
 var peremeshat_voprosi = "да";
 var vopros_1 = "";
 var vopros_2 = "7-8*2 = ";
