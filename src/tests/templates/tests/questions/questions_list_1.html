@@ -1,12 +1,6 @@
-<html>
-<head><title>Тест</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="data/css/bootstrap.min.css">
-<link rel="stylesheet" href="data/css/styles.css">
-<script src="data/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="data/data.js"></script>
-
-</head>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
 <body class="text-center">
 <div style="text-align:center;">
 <p id="name_test" style="font-weight:bold;position:absolute;top:20px;">Тест. Тема - "<span id="tema"></span>".</p>
@@ -108,4 +102,4 @@
 </div>
 </div></div>
 </body>
-</html>
+{% endblock %}
