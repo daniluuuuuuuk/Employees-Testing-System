@@ -12,7 +12,7 @@
     {% csrf_token %}
     <input type="hidden" name="next" value="{{ next }}" />
     {% for field in form %}
-      <p>
+      <p class="text_from">
         {{ field.label_tag }}<br>
         {{ field }}<br>
         {% for error in field.errors %}

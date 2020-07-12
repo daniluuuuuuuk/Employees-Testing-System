@@ -6,7 +6,7 @@
 {% block content %}
    <h2>Войти</h2>
   {% if form.errors %}
-    <p style="color: red">Неправильный логин или пароль.Пожалуйста, попробуйте еще раз.</p>
+    <p style="color: red, font-size: 10px">Неправильный логин или пароль.Пожалуйста, попробуйте еще раз.</p>
   {% endif %}
   <form method="post">
     {% csrf_token %}

@@ -1,0 +1,142 @@
+.navbar{
+ background:#F97300;
+}
+.nav-link , .navbar-brand{
+ color: #f4f4f4;
+ cursor: pointer;
+}
+.nav-link{
+ margin-right: 1em !important;
+}
+.nav-link:hover{
+ background: #f4f4f4;
+ color: #f97300;
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+.bg-dark{
+background-color:#343a40!important
+}
+.bg-primary{
+background-color:#343a40!important
+}
+.infobar{
+	background-color: #F97300;
+	width: 700px;
+	height: 170px;
+	margin-top: 300px;
+	margin-left: 10px;
+}
+.infotext{
+	padding: 22px;
+	color: white;
+	font: arial, sans-serif;
+	font-size: 23px;
+	text-align: justify;
+	word-spacing: 3px;
+}
+.testinfo {
+	background-color: #F97300;
+	width: 700px;
+	height: 300px;
+	margin-top: 300px;
+	margin-left: 10px;
+	padding: 30px;
+}
+
+.testinfo_h{
+	text-align: center;
+	color: white;
+
+}
+
+li{
+	color: white;
+}
+.authorization{
+	background-color: #F97300;
+	width: 400px;
+	height: 400px;
+	margin-top: 300px;
+	padding: 30px;
+	text-align: center;
+}
+.auth_h{
+	color: white;
+	text-align: center;
+}
+form{
+padding-left: 65px;
+}
+
+button{
+
+  padding-top: 50px;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding-left: 40px;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  margin-left: 40px;
+  margin-top: 20px;
+
+}
+button:hover { background: rgba(255,255,255,.2); }
+button:active { background: white; }
+
+.logged_out{
+    background-color: #F97300;
+	width: 500px;
+	height: 170px;
+	margin-top: 300px;
+	margin-left: 650px;
+}
+.log_out_text{
+    background-color: #F97300;
+	width: 500px;
+	height: 170px;
+    color: white;
+    padding: 55px;
+    font-size: 20px;
+    text-align: justify;
+	word-spacing: 3px;
+}
+.text_form{
+font-size: 17px;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+#ot {
+    color: #F97300;
+}
+.card{
+margin-top: 100px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #F97300;
+    border-color: #F97300;
+}
