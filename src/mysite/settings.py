@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 from pathlib import Path
 from django.urls import reverse_lazy
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).parent.parent.resolve()
@@ -22,10 +23,12 @@ PROJECT_DIR = BASE_DIR / "mysite"
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f1ewu3_i7qtx=jh-t9nopjh7pl6(@0yv_6#adm)pn#ku+=-c&0'
+# SECRET_KEY = 'f1ewu3_i7qtx=jh-t9nopjh7pl6(@0yv_6#adm)pn#ku+=-c&0'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'f1ewu3_i7qtx=jh-t9nopjh7pl6(@0yv_6#adm)pn#ku+=-c&0')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = []
 
@@ -51,6 +54,7 @@ AUTH_USER_MODEL = 'account.Account'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -135,7 +139,12 @@ LOGIN_URL = reverse_lazy("login")
 LOGIN_REDIRECT_URL = reverse_lazy("main")
 LOGOUT_URL = reverse_lazy("main")
 
-
 PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
 ]
+
+# Heroku: Update database configuration from $DATABASE_URL.
+
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
