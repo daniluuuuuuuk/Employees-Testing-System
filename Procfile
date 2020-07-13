@@ -1,1 +1,1 @@
-web: gunicorn mysite.wsgi:application --log-file - --log-level debug
+web: pipenv run python src/manage.py runserver 0.0.0.0:$PORT
