@@ -1,1 +1,1 @@
-web: gunicorn Employees-Testing-System.wsgi --log-file -
+web: gunicorn mysite.wsgi --log-file -
