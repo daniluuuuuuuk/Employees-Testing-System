@@ -139,9 +139,7 @@ LOGIN_URL = reverse_lazy("login")
 LOGIN_REDIRECT_URL = reverse_lazy("main")
 LOGOUT_URL = reverse_lazy("main")
 
-PASSWORD_HASHERS = [
-    "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
-]
+
 
 # Heroku: Update database configuration from $DATABASE_URL.
 
